@@ -21,4 +21,10 @@ from blog import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^charul/', views.blog_home),
+    url(r'^create/', views.blog_create),
+    url(r'^detail/', views.blog_detail),
+    url(r'^list/', views.blog_list),
+    url(r'^update/', views.blog_update),
+    url(r'^delete/', views.blog_delete),
+    url(r'^template/', views.blog_template),
 ]
