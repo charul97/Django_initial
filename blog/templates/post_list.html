@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1> hello templates {{title}}</h1>
+	{% for obj in object_list %}
+
+
+	<h3>title</h3><a href='{{ obj.get_absolute_url }}'>{{obj.title}}</a>
+	<h3>text</h3>{{obj.text}}
+	<h3>created date</h3>{{obj.created_date}}
+	<h3>published date</h3>{{obj.published_date}}
+	<h3>id</h3>{{obj.id}}
+	<br/>
+
+	{% endfor %}
+{% endblock content %}	
